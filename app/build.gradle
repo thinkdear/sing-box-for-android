@@ -20,8 +20,8 @@ android {
         applicationId "io.nekohasekai.sfa"
         minSdk 21
         targetSdk 34
-        versionCode 2
-        versionName 1.5
+        versionCode getProps("VERSION_CODE").toInteger()
+        versionName getProps("VERSION_NAME")
         setProperty("archivesBaseName", "SFA-" + versionName)
     }
 
